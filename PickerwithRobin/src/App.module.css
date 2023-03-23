@@ -1,0 +1,10 @@
+h1 {
+    margin: 2em;
+    text-align: center;
+}
+
+.workspace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
