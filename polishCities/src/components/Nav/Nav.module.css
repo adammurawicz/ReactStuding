@@ -1,0 +1,11 @@
+@import url('../../variables.css');
+
+.nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: var(--secondColor);
+    padding: .5em;
+    overflow: hidden;
+    z-index: 3;
+}

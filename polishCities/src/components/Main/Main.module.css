@@ -1,0 +1,9 @@
+@import url('../../variables.css');
+
+.main {
+    background-color: var(--whiteColor);
+    padding: 2em;
+    margin: auto auto;
+    min-height: 500px;
+    max-width: 1200px;
+}

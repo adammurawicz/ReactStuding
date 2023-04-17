@@ -1,0 +1,9 @@
+@import url('../../variables.css');
+
+.footer {
+    background-color: var(--fourthColor);
+    padding: 1em;
+    color: var(--whiteColor);
+    text-align: center;
+    text-decoration: none;
+}

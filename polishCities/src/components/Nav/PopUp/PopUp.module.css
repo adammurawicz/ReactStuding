@@ -1,0 +1,18 @@
+@import url('../../../variables.css');
+
+.popUp {
+    position: fixed;
+    height: 100vH;
+    width: 100%;
+    background-color: var(--secondColor);
+    left: 2000px;
+    top: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10em 0;
+    transition: all 1s;
+    z-index: 3;
+}
+

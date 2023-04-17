@@ -1,0 +1,30 @@
+@import url('../../../variables.css');
+
+.navMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.burger {
+    margin-right: .5em;
+    background-color: transparent;
+    color: var(--whiteColor);
+    font-size: 1.8rem;
+    border: none;
+    padding: .3em;
+    transition: all .5s;
+}
+
+.burger:hover {
+    cursor: pointer;
+    transform: scale(.9);
+}
+
+@media (min-width: 769px) {
+    .navMobile {
+        display: none;
+    }
+}
+

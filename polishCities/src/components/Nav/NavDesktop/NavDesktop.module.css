@@ -1,0 +1,28 @@
+@import url('../../../variables.css');
+
+
+.navDesktopWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navDesktopItems {
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+}
+
+@media (max-width: 768px) {
+    .navDesktop {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .navDesktopItem {
+        font-size: 1rem;
+    }
+}

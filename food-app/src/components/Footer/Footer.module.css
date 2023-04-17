@@ -1,0 +1,11 @@
+@import url('../../variables.css');
+
+.footer {
+    background-color: var(--myBlack);
+    position: absolute;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+    overflow-x: hidden;
+    color: var(--myWhite);
+}

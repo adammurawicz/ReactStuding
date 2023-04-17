@@ -1,0 +1,8 @@
+@import url('../../variables.css');
+
+.header {
+    padding: 1em;
+    background-color: var(--myBlack);
+    color: var(--myWhite);
+    text-shadow: 15px 20px 5px rgba(245, 245, 245, 1);
+}

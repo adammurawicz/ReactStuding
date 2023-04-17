@@ -1,0 +1,63 @@
+export const mainCities = [
+    {   
+        key: 1,
+        name: "Gdansk",
+        firstContent: "Gdansk is a city on the Baltic coast of northern Poland. With a population of 470,621, Gdańsk is the capital and largest city of the Pomeranian Voivodeship. It is Poland's principal seaport and the country's fourth-largest metropolitan area.",
+        secondContent: "The city lies at the southern edge of Gdańsk Bay, close to the city of Gdynia and resort town of Sopot; these form a metropolitan area called the Tricity, with a population of approximately 1.5 million. Gdańsk lies at the mouth of the Motława River, connected to the Leniwka, a branch in the delta of the Vistula River, which connects Gdańsk with the Polish capital Warsaw.",
+        thirdContent: "The history of the city has a complex history, having had periods of Polish and German rule, and autonomy as a free city. An important shipbuilding and trade port since the Middle Ages, in 1361 it became a member of the Hanseatic League which influenced its economic, demographic and urban landscape. It also served as Poland's principal seaport, and was the largest city of Poland in the 15th-17th centuries. From 1918 to 1939, Gdańsk lay in the disputed so-called Polish Corridor; its ambiguous political status created tensions that culminated in the German invasion of Poland and the first clash of the Second World War at nearby Westerplatte. In the 1980s, Gdańsk was the birthplace of the Solidarity movement, which helped precipitate the collapse of the Eastern Bloc, the fall of the Berlin Wall and the dissolution of the Warsaw Pact.",
+        imgOne: "https://upload.wikimedia.org/wikipedia/commons/8/81/Calle_Dlugie_Pobrzeze%2C_Gdansk%2C_Polonia%2C_2013-05-20%2C_DD_06.jpg",
+        imgTwo: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Museum_WWII_2.jpg",
+        crest: "https://upload.wikimedia.org/wikipedia/commons/0/00/POL_Gda%C5%84sk_COA_%28grand%29.svg"
+    },
+    {   
+        key: 2,
+        name: "Cracow",
+        firstContent: "Cracow, is the second-largest and one of the oldest cities in Poland. Situated on the Vistula River in Lesser Poland Voivodeship, the city dates back to the seventh century. Cracow was the official capital of Poland until 1596 and has traditionally been one of the leading centres of Polish academic, economic, cultural and artistic life. Cited as one of Europe's most beautiful cities, its Old Town with Wawel Royal Castle was declared a UNESCO World Heritage Site in 1978, one of the world's first sites granted the status.",
+        secondContent: "The city has grown from a Stone Age settlement to Poland's second-most-important city. It began as a hamlet on Wawel Hill and was reported by Ibrahim Ibn Yakoub, a merchant from Cordoba, as a busy trading centre of Central Europe in 985. With the establishment of new universities and cultural venues at the emergence of the Second Polish Republic in 1918 and throughout the 20th century, Kraków reaffirmed its role as a major national academic and artistic centre. As of 2022, the city has a population of 800,653, with approximately 8 million additional people living within a 100 km (62 mi) radius of its main square.",
+        thirdContent: "After the invasion of Poland by Nazi Germany at the start of World War II, the newly defined Distrikt Krakau became the capital of Germany's General Government. The Jewish population of the city was forced into a walled zone known as the Kraków Ghetto, from where they were sent to Nazi extermination camps such as the nearby Auschwitz, and Nazi concentration camps like Plaszow. However, the city was spared from destruction and major bombing.",
+        imgOne: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Krakow_Rynek_Glowny_panorama_2.jpg",
+        imgTwo: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Wawel_Krakow_June_2006_003.jpg",
+        crest: "https://upload.wikimedia.org/wikipedia/commons/4/41/POL_Krak%C3%B3w_COA.svg"
+    },
+    {   
+        key: 3,
+        name: "Lublin",
+        firstContent: "Lublin is the ninth-largest city in Poland and the second-largest city of historical Lesser Poland. It is the capital and the centre of Lublin Voivodeship with a population of 336,339 (December 2021).[2] Lublin is the largest Polish city east of the Vistula River and is about 170 km (106 mi) to the southeast of Warsaw by road.",
+        secondContent: "One of the events that greatly contributed to the city's development was the Polish-Lithuanian Union of Krewo in 1385. Lublin thrived as a centre of trade and commerce due to its strategic location on the route between Vilnius and Kraków; the inhabitants had the privilege of free trade in the Grand Duchy of Lithuania. The Lublin Parliament session of 1569 led to the creation of a real union between the Crown of the Kingdom of Poland and the Grand Duchy of Lithuania, thus creating the Polish–Lithuanian Commonwealth. Lublin witnessed the early stages of Reformation in the 16th century. A Calvinist congregation was founded and groups of radical Arians appeared in the city, making it an important global centre of Arianism.",
+        thirdContent: "Until the partitions at the end of the 18th century, Lublin was a royal city of the Crown Kingdom of Poland. Its delegates and nobles had the right to participate in the royal election. In 1578, Lublin was chosen as the seat of the Crown Tribunal, the highest appeal court in the Polish–Lithuanian Commonwealth, and for centuries, the city has been flourishing as a centre of culture and higher learning.",
+        imgOne: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Alians_PL%2CCracowGateInLublin%2C2012%2CP9240022.jpg",
+        imgTwo: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Lublin_Don%C5%BCon_i_dziedziniec_zamku.jpg",
+        crest: "https://upload.wikimedia.org/wikipedia/commons/8/89/POL_The_official_flag_of_the_City_of_Lublin.svg"
+    },
+        
+    {   
+        key: 4,
+        name: "Poznan",
+        firstContent: "Poznan is a city on the River Warta in west-central Poland, within the Greater Poland region. The city is an important cultural and business centre, and one of Poland's most populous regions with many regional customs such as Saint John's Fair (Jarmark Świętojański), traditional Saint Martin's croissants and a local dialect. Among its most important heritage sites are the Renaissance Old Town, Town Hall and Gothic Cathedral.",
+        secondContent: "Poznań is the fifth-largest and one of the oldest cities in Poland. As of 2021, the city's population is 529,410, while the Poznań metropolitan area (Metropolia Poznań) comprising Poznań County and several other communities is inhabited by over 1.1 million people. It is one of four historical capitals of medieval Poland and the ancient capital of the Greater Poland region, currently the administrative capital of the province called Greater Poland Voivodeship.",
+        thirdContent: "Poznań is a center of trade, sports, education, technology and tourism. It is an important academic site, with about 130,000 students and Adam Mickiewicz University, the third largest Polish university. The city serves as the seat of the oldest Polish diocese, now being one of the most populous Catholic archdioceses in the country. The city also hosts the Poznań International Fair – the biggest industrial fair in Poland and one of the largest fairs in Europe. The city's other renowned landmarks include the National Museum, Grand Theatre, Fara Church and the Imperial Castle.",
+        imgOne: "https://upload.wikimedia.org/wikipedia/commons/7/72/Plaza_Mayor%2C_Poznan%2C_Polonia%2C_2014-09-18%2C_DD_41.jpg",
+        imgTwo: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Stare_Miasto_w_Poznaniu.jpg",
+        crest: "https://upload.wikimedia.org/wikipedia/commons/8/8c/POL_Pozna%C5%84_COA.svg"
+    },
+    {   
+        key: 5,
+        name: "Warszawa",
+        firstContent: "Warsaw, officially the Capital City of Warsaw, is the capital and largest city of Poland. The metropolis stands on the River Vistula in east-central Poland, and its population is officially estimated at 1.86 million residents within a greater metropolitan area of 3.1 million residents, which makes Warsaw the 6th most-populous city in the European Union. The city area measures 517 km2 (200 sq mi) and comprises 18 districts, while the metropolitan area covers 6,100 km2 (2,355 sq mi). Warsaw is an alpha global city, a major cultural, political and economic hub, and the country's seat of government.",
+        secondContent: "Warsaw traces its origins to a small fishing town in Masovia. The city rose to prominence in the late 16th century, when Sigismund III decided to move the Polish capital and his royal court from Kraków. Warsaw served as the de facto capital of the Polish–Lithuanian Commonwealth until 1795, and subsequently as the seat of Napoleon's Duchy of Warsaw. The 19th century and its Industrial Revolution brought a demographic boom which made it one of the largest and most densely populated cities in Europe. Known then for its elegant architecture and boulevards, Warsaw was bombed and besieged at the start of World War II in 1939. Much of the historic city was destroyed and its diverse population decimated by the Ghetto Uprising in 1943, the general Warsaw Uprising in 1944 and systematic razing.",
+        thirdContent: "Warsaw is served by two international airports, the busiest being Warsaw Chopin and the smaller Warsaw Modlin intended for low-cost carriers. Major public transport services operating in the city include the Warsaw Metro, buses, commuter rail service and an extensive tram network. The city is a significant centre of research and development, business process outsourcing, and information technology outsourcing. The Warsaw Stock Exchange is the largest and most important in Central and Eastern Europe. Frontex, the European Union agency for external border security, and ODIHR, one of the principal institutions of the Organization for Security and Co-operation in Europe, have their headquarters in Warsaw. As of 2022, Warsaw has one of the highest number of skyscrapers in Europe while Varso Place is the tallest building in the European Union.",
+        imgOne: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Panorama_siekierkowski.jpg",
+        imgTwo: "https://upload.wikimedia.org/wikipedia/commons/1/16/Warszawa%2C_ul._Nowy_%C5%9Awiat_72-74_20170517_004.jpg",
+        crest: "https://upload.wikimedia.org/wikipedia/commons/b/b5/POL_Warszawa_COA.svg"
+    },
+    {   
+        key: 6,
+        name: "Wroclaw",
+        firstContent: "Wrocław is a city in southwestern Poland and the largest city in the historical region of Silesia. It lies on the banks of the River Oder in the Silesian Lowlands of Central Europe, roughly 40 kilometres (25 mi) from the Sudeten Mountains to the south. As of 2022, the official population of Wrocław is 674,312, with a total of 1.3 million residing in the metropolitan area, making it the third largest city in Poland.",
+        secondContent: "Wrocław is the historical capital of Silesia and Lower Silesia. Today, it is the capital of the Lower Silesian Voivodeship. The history of the city dates back over 1,000 years; at various times, it has been part of the Kingdom of Poland, the Duchy of Bohemia, the Kingdom of Hungary, the Habsburg monarchy of Austria, the Kingdom of Prussia and Germany. Wrocław became part of Poland again in 1945 as part of the Recovered Territories, the result of extensive territorial changes of Poland immediately after World War II.",
+        thirdContent: "Wrocław is a university city with a student population of over 130,000, making it one of the most youth-oriented cities in the country. Since the beginning of the 20th century, the University of Wrocław, previously Breslau University, has produced nine Nobel Prize laureates and is renowned for its high quality of teaching. Wrocław also possesses numerous historical landmarks, including the Main Market Square, Cathedral Island, Wrocław Opera, the National Museum and the Centennial Hall, which is listed as a UNESCO World Heritage Site. The city is also home to the Wrocław Zoo, which was established in 1865, making it the oldest zoological garden in Poland.",
+        imgOne: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Wroclaw_-_Ostrow_Tumski.jpg",
+        imgTwo: "https://upload.wikimedia.org/wikipedia/commons/1/15/Wroclaw-Sky-Tower-120819.jpg",
+        crest: "https://upload.wikimedia.org/wikipedia/commons/0/07/Herb_wroclaw.svg"
+    }
+]

@@ -1,0 +1,34 @@
+.menuItem {
+    color: var(--whiteColor);
+    font-size: 1.6rem;
+}
+
+.menuItem:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .menuItem {
+        font-size: .8rem;
+        margin: 0 .5em;
+        transition: transform .5s;
+    }
+
+    .menuItem:hover {
+        transform: scale(.95);
+    }
+}
+
+@media (min-width: 992px) {
+    .menuItem {
+        font-size: 1rem;
+        margin: 0 .7em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menuItem {
+        font-size: 1rem;
+        margin: 0 .7em;
+    }
+}

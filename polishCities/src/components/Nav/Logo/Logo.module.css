@@ -1,0 +1,36 @@
+@import url('../../../variables.css');
+
+.logoWrapper a {
+    display: flex;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.logoWrapper a p{
+    color: var(--whiteColor);
+    font-size: 1.1em;
+    margin-left: 55px;
+    transition: all .3s;
+}
+
+.logoWrapper img {
+    position: absolute;
+    margin-top: -10px;
+    width: 40px;
+}
+
+.logoWrapper a p:hover {
+    cursor: pointer;
+    transform: scale(.95);
+}
+
+@media (min-width:768px) {
+    .logoWrapper a p{
+        font-size: 1.3em;
+        margin-left: 60px;
+    }
+    
+    .logoWrapper img {
+        width: 50px;
+    }
+}
