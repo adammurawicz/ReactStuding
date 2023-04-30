@@ -1,0 +1,5 @@
+const BASE_URL = 'https://api.themoviedb.org/3/'
+const API_KEY_PARAM = '?api_key=1950e65f49aba602762872f368402dd7'
+const BACKDROP_BASE_URL = 'https://image.tmdb.org/t/p/original/'
+
+export { BASE_URL, API_KEY_PARAM, BACKDROP_BASE_URL }
