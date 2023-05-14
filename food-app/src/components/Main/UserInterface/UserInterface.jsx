@@ -1,43 +1,28 @@
 import s from './UserInterface.module.css'
-import { useState } from 'react'
-import { getRequest } from '../../../API/API'
+import { useEffect, useState } from 'react'
+import { FoodAPI } from '../../../API/API'
 
 function UserInterface (props) {
 
-    const [food, setFood] = useState('')
-    const input = document.querySelector('input')
-
-
-    function typeInput (e) {
-            setFood(e.target.value)
-    }
-
-    function action () {
-            if (food == '') {
-                console.log('null');
-            } else {
-                props.function(food)
-                cleanInput()
-                getRequest(food)
-            }
-    }
-
-    function checkEnter (e) {
-        if (e.key == 'Enter') {
-            action()
-        }
-    }
+const [value, setValue] = useState('')
     
-    
-    function cleanInput () {
-        input.setAttribute('placeholder', 'Enter a what you have eaten')
-        input.value = ''
+function fetchQuery(e) {
+    if (e.key === 'Enter' && e.target.value.trim() !== ''){
+        props.function(e.target.value)
+        setValue('')
     }
+}
+
+function handleChange(e) {
+    setValue(e.target.value)
+}
 
     return (
         <div className={s.userInterfaceWrapper}>
-            <input type='text' placeholder='Enter a what you have eaten' onKeyUp={checkEnter} onChange={typeInput}/>
-            <button onClick={() => action()}>Calculate Foods</button>
+            <input type='text' placeholder='Enter a what you have eaten' value={value} onKeyUp={fetchQuery} onChange={handleChange}/>
+            <button onClick={ (e) => {props.function(e.target.value)
+                                      setValue('')}}>Calculate Foods
+            </button>
         </div>
     )
 }

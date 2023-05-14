@@ -1,0 +1,11 @@
+
+li {
+    padding: .5em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    list-style: none;
+}
+
+li:hover {
+    cursor: pointer;
+}

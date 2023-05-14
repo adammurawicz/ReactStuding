@@ -1,28 +1,38 @@
-import s from './FoodInterface.module.css'
-import { getRequest } from '../../../API/API';
 import { useState, useEffect } from 'react';
+import s from './FoodInterface.module.css'
+import { FoodAPI } from '../../../API/API';
 
-
-function FoodInterface () {
+function FoodInterface (props) {
+    
 
     return (
+        
         <div className={s.foodInterfaceWrapper}>
             
+            <p style={{'color': 'tomato', 'marginTop': '-1em', 'padding': '1em', 'fontStyle': 'italic'}}>{props.error}</p>
+
             <div className={s.food}>
-                <p>Food</p>
-                <p>Food</p>
+                <p style={{'fontWeight': 'bold'}}>Food name:</p>
+                {props.data ? <p>{props.data.label}</p> : null}
             </div>
 
             <div className={s.nutrients}>
-                <p>Nutrients (in 100g)</p>
-                <p>Energy:</p>
-                <p>Protein</p>
-                <p>Fat</p>
-                <p>Carbs</p>
+                <p style={{'fontWeight': 'bold'}}>Nutrients (in 100g):</p>
+
+                {props.data ? 
+                    <> 
+                    <p>Energy: <span style={{'fontStyle': 'italic'}}>{props.data.nutrients.ENERC_KCAL} kcal</span></p>
+                    <p>Protein <span style={{'fontStyle': 'italic'}}>{props.data.nutrients.PROCNT.toFixed(1)}</span> g</p>
+                    <p>Fat: <span style={{'fontStyle': 'italic'}}>{props.data.nutrients.FAT.toFixed(1)}</span> g</p>
+                    <p>Carb: <span style={{'fontStyle': 'italic'}}>{props.data.nutrients.CHOCDF.toFixed(1)}</span> g</p>
+                    </>
+                 : null }
             </div>
+            
+            {props.data ? <img src={props.data.image}></img> : null}
 
         </div>
-    )
+            )
 }
 
 export default FoodInterface

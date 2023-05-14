@@ -1,4 +1,25 @@
 .userInterfaceWrapper input,
 .userInterfaceWrapper button {
     margin: 2em 0;
+    border: 2px solid black;
+    padding: 0.8em;
+}
+
+.userInterfaceWrapper input {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.userInterfaceWrapper button {
+    border-left: 0px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+    transition: all .5s;
+}
+
+.userInterfaceWrapper button:hover {
+    cursor: pointer;
+    background-color: rgb(149, 146, 146);
+    color: white;
 }

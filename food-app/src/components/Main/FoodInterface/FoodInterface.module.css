@@ -1,1 +1,10 @@
 @import url('../../../variables.css');
+
+p {
+    font-size: 1.2rem;
+}
+
+img {
+    margin-top: 1em;
+    border-radius: 15px;
+}
