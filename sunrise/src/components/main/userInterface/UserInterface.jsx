@@ -1,10 +1,13 @@
 import s from './UserInterface.module.css'
 import { useState } from 'react';
 
-export function UserInterface ({ changeQuery }) {
+export function UserInterface ({ transferRequest, transferError }) {
 
     const inputAction = (e) => {
-        changeQuery(e.target.value)
+        if (e.key === 'Enter' && e.target.value.trim() !== ''){
+            transferRequest(e.target.value)
+            cleaning()
+        }
     }
 
     const cleaning = () => {
@@ -14,14 +17,15 @@ export function UserInterface ({ changeQuery }) {
     const checkEnter = (e) => {
         if(e.key == 'Enter') {
             inputAction(e)
-            cleaning()
         }
     }
 
     return (
-        <div>
-            <input onChange={inputAction} onKeyUp={checkEnter} type='text' placeholder='type city name...'/>
-            <button onClick={cleaning}>check it!</button>
+        <div className={s.userInterface}>
+            <input onChange={inputAction} onKeyUp={inputAction} type='text' placeholder='type city name...'/>
+            <button onClick={() => {transferRequest(document.querySelector('input').value) 
+                                    cleaning()}}>check it!</button>
+            <p>{transferError != '' ? transferError : null}</p>
         </div>
     )
 }

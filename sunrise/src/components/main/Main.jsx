@@ -3,28 +3,39 @@ import { UserInterface } from './userInterface/UserInterface'
 import { ResponseInterface } from './responseInterface/ResponseInterface'
 import { useState, useEffect } from 'react'
 import { getRequest } from '../../API'
+import { WeatherAPI } from '../../API'
 
 export function Main () {
 
-const [query, setQuery] = useState('Poznan')
-const [respo, setRespo] = useState('')
+const [weather, setWeather] = useState('')
+const [error, setError] = useState('')
 
-const changeQuery = (city) => {
-    setQuery(city)
+
+useEffect(() => {
+
+}, [weather])
+
+async function getRequest(query) {
+    try {
+        const response = await WeatherAPI.getRequest(query)
+        if (response != weather) {
+            setWeather(response)
+            console.log(response);
+            setError('')
+        }
+    }
+    catch (error) {
+        console.log('catch', error);
+        setError('sth is wrong with your query')
+        setWeather('')
+    }
 }
-
-// useEffect(() => {
-//     if (query) {
-//         getRequest(query)
-//     }
-// } )
 
 
     return (
         <main>
-            <UserInterface changeQuery={changeQuery}/>
-            <ResponseInterface/>
-            <button onClick={() => console.log(query)}>Check</button>
+            <UserInterface transferRequest={getRequest} transferError={error}/>
+            <ResponseInterface data={weather}/>
         </main>
     )
 }
