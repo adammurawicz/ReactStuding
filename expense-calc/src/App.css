@@ -39,10 +39,27 @@
   }
 }
 
-input {
-  padding: .5em 2em;
+input,
+form button {
+  padding: .5em 1em;
   margin: 2em;
   border: none;
   border-radius: 15px;
   text-align: center;
+
+}
+
+input[type=text] {
+  width: 300px;
+}
+
+form button {
+  width: 150px;
+  background-color: white;
+  transition: all 1s;
+}
+
+form button:hover {
+  background-color: #BF846F;
+  color: white;
 }

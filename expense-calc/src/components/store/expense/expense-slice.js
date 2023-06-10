@@ -8,5 +8,14 @@ export const expenseSlice = createSlice({
             {name: 'laptop loan', price: 300},
             {name: 'gym', price: 200}
         ]
+    },
+    // funkcja odpowiedzialna za uaktualnianie danych w slice
+    reducers: {
+        addExpenseAction: (currentSlice, action) => {
+            currentSlice.expenseList.push(action.payload)
+        }
     }
 })
+
+// export funkcji
+export const { addExpenseAction } = expenseSlice.actions

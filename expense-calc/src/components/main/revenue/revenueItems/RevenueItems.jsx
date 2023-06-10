@@ -1,10 +1,10 @@
 import s from './RevenueItems.module.css'
 
-export function RevenueItems () {
+export function RevenueItems ({ items }) {
 
     return (
         <div>
-            Revenue Items
+             {items.map((item) => <p key={Math.random()}> {item.name}: {item.price}$</p>)}
         </div>
     )
 }
