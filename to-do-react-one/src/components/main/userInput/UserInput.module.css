@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form label {
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.form input,
+.form select,
+.form textarea {
+    border-radius: 5px;
+    padding: .5em;
+    border: none;
+    text-align: center;
+}
+
+.form textarea {
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.error {
+    color: #f5f5f5;
+}

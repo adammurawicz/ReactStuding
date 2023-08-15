@@ -1,0 +1,15 @@
+
+.tasks h2 {
+    margin: 1em;
+    padding: 2em;
+}
+
+.liItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.liItem:last-of-type{
+    margin-bottom: 4em;
+}

@@ -1,0 +1,9 @@
+.btn {
+    margin: 1em;
+    padding: 0.75em 1.25em;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
