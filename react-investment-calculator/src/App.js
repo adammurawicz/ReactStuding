@@ -1,44 +1,29 @@
-import { useState } from "react";
-import { Header } from "./components/Header/Header";
-import { ResultTable } from "./components/ResulTable/ResultTable";
-import { UserInput } from "./components/UserInput/UserInput";
+import { useState } from 'react';
+import './App.css';
+import { Footer } from './components/Footer/Footer';
+import { Header } from './components/Header/Header';
+import { Input } from './components/Input/Input';
+import { Output } from './components/Output/Output';
+
+
 
 function App() {
 
-  const [userInput, setUserInput] = useState(null)
+  const [payment, setPayment] = useState('')
+  const [date, setDate] = useState('')
 
-  const calculateHandler = (userInput) => {
-    setUserInput(userInput)
+  const fetchValues = (first, second) => {
+    setPayment(current => [...current, first])
+    setDate(current => [...current, second])
+
   }
- 
-  const yearlyData = []
-
-  if(userInput) {
-    let currentSavings = +userInput['current-savings'];
-    const yearlyContribution = +userInput['yearly-contribution'];
-    const expectedReturn = +userInput['expected-return'] / 100;
-    const duration = +userInput['duration'];
-  
-    for (let i = 0; i < duration; i++) {
-      const yearlyInterest = currentSavings * expectedReturn;
-      currentSavings += yearlyInterest + yearlyContribution;
-      yearlyData.push({
-        year: i + 1,
-        yearlyInterest: yearlyInterest,
-        savingsEndOfYear: currentSavings,
-        yearlyContribution: yearlyContribution,
-      });
-    }
-  }
-
-
 
   return (
-    <div>
+    <div className="App">
       <Header></Header>
-      <UserInput onCalculate={calculateHandler}></UserInput>
-      {!userInput && <p>No investment calculated yet</p>}
-      {userInput && <ResultTable data={yearlyData} initialInvestment={userInput['current-savings']}></ResultTable>}
+      <Input onFetchValues={fetchValues}></Input>
+      <Output onDates={date} onPayments={payment}></Output>
+      <Footer></Footer>
     </div>
   );
 }
